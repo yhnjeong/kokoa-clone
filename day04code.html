@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lnag="kr">
+  <head>
+    <title>Create An Account</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Create an account" />
+  </head>
+
+  <body id="CreateAccountBody">
+    <header>
+      <h1>Create An Account</h1>
+    </header>
+    <main>
+      <form>
+        <label for="firstname">First name</label>
+        <input id="firstname" placeholder="First name" required /><br />
+        <label for="lastname">Last name</label>
+        <input id="lastname" placeholder="Last name" required /><br />
+        <label for="email">Email</label>
+        <input id="email" type="email" placeholder="Email" required /><br />
+        <label for="username">Username</label>
+        <input id="username" placeholder="Username" required /><br />
+        <label for="password">Password</label>
+        <input
+          id="password"
+          type="password"
+          placeholder="Password"
+          minlength="10"
+          required
+        /><br />
+
+        <label for="birth">Birth date</label>
+        <input id="birth" type="date" lang="en" required /><br />
+
+        <label for="happy">How happy are you?</label>
+        <input id="happy" type="range" required /><br />
+
+        <label for="fcolor">What is your fav. color?</label>
+        <input id="fcolor" type="color" required /><br />
+
+        <input type="submit" value="Create Account" /><br />
+      </form>
+    </main>
+  </body>
+</html>
