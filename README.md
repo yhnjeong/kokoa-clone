@@ -1,3 +1,3 @@
-# Kokoa clone 2021
+# Kokoa clone
 
 HTML & CSS got so much better!
