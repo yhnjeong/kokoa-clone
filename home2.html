@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        height: 1000vh;
+        margin: 50px;
+      }
+      span {
+        background-color: yellowgreen;
+        color: tomato;
+        padding: 5px;
+        border-radius: 10px;
+        /*text-decoration: underline;*/
+      }
+      p span {
+        /*부모 안에 있는 자식에만 적용하기*/
+        color: white;
+        text-decoration: none;
+      }
+      div > span {
+        /*부모 바로 밑의 자식에만 적용 */
+        text-decoration: underline;
+      }
+      p + span {
+        /* 이웃(바로아래) 형제에만 적용 */
+        text-decoration: underline;
+      }
+      /*p ~ span {
+        text-decoration: underline;
+      }
+    </style>
+    */
+  </head>
+
+  <body>
+    <div>
+      <span>hello</span>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod commodi e
+        sequi ipsam odio dolorem. <span>inside</span>
+      </p>
+      <address>hi</address>
+      <span>hello</span>
+    </div>
+  </body>
+</html>

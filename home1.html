@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* position : static(Default), fixed, relative, absolute */
+      body {
+        height: 1000vh;
+        margin: 50px;
+      }
+      div {
+        width: 300px;
+        height: 300px;
+        background-color: wheat;
+        position: relative;
+      }
+
+      /*
+        #green {}
+      }
+      .green {
+        background-color: teal;
+        height: 100px;
+        position: absolute; /* 부모가 position:relative 여야 부모 칸기준으로 움직임 
+        bottom: 0px;
+        right: 0px;
+        width: 100px;
+      }
+      */
+
+      div:first-child {
+        background-color: tomato;
+      }
+      div:last-child {
+        background-color: teal;
+      }
+
+      span {
+        background-color: tomato;
+      }
+      span:nth-child(3n + 1) {
+        background-color: teal;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <!-- 이게 아래 div의 부모
+      <div class="green"></div> -->
+    </div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <span>hello</span>
+    <span>hello</span>
+    <span>hello</span>
+    <span>hello</span>
+    <span>hello</span>
+  </body>
+</html>
