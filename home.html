@@ -4,12 +4,15 @@
     <title>Home - My first website.</title>
     <!-- <link href="styles.css" rel="stylesheet" /> -->
     <style>
+      /* style of whole things : use *
       * {
         border: 1px dashed black;
       }
       html {
         background-color: tomato;
       }
+      */
+
       h1 {
         color: blue;
         /*
@@ -30,15 +33,37 @@
                 margin-right:5px;
                 margin-bottom:10px;
                 */
-        margin: 20px;
-        padding: 20px;
+        /*margin: 20px; */
+        /*padding: 20px;*/
         background-color: thistle;
+      }
+      main {
+        margin: 20px;
+        height: 80vh; /* viewport height 80% */
+        display: flex;
+        justify-content: space-between; /* main axis = horizental(default) */
+        /* flex-direction: column; (defualt:row)*/
+        align-items: center; /* cross axis vertical(default)*/
+        flex-wrap: nowrap;
+        /*
+        flex-wrap: wrap-reverse;
+        flex-direction: row-reverse; */
       }
       div {
         /* display:inline; */
         /* margin: 80px 15px; */
-        padding: 20px;
+        /* padding: 20px; */
         /* border: 2px solid black; */
+        /*  display: inline-block;       -- not recommended : use flexbox!!*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-color: green;
+        color: white;
+
+        width: 200px;
+        height: 200px;
       }
       #first {
         background-color: whitesmoke;
@@ -47,8 +72,8 @@
       }
       #second {
         background-color: teal;
-        height: 100px;
-        width: 100px;
+        height: 200px;
+        width: 200px;
       }
       #third {
         background-color: wheat;
@@ -60,7 +85,7 @@
         background-color: teal;
         /* border-style: dotted; */
       }
-      /* 
+      /*
       #tomato,
       #tomato2,
       #tomato3 {
@@ -91,22 +116,31 @@
     </header>
 
     <main>
-      <div id="first">
-        <div id="second">
-          <div id="third">
-            <span class="btn teal">hello</span>
-            <span class="btn tomato">hello</span>
-            <span class="btn teal">hello</span>
-            <span class="btn tomato">hello</span>
-            <span class="btn teal">hello</span>
-            <span class="btn tomato">hello</span>
-            <span class="btn teal">hello</span>
-          </div>
+      <!--
+        <div id="first">
+            <div id="second">
+            <div id="third">
+                <span class="btn teal">hello</span>
+                <span class="btn tomato">hello</span>
+                <span class="btn teal">hello</span>
+                <span class="btn tomato">hello</span>
+                <span class="btn teal">hello</span>
+                <span class="btn tomato">hello</span>
+                <span class="btn teal">hello</span>
+            </div>
+            </div>
         </div>
-      </div>
+      -->
+
+      <div>1</div>
+      <div id="second">2</div>
+      <div>3</div>
+
+      <!--
       <address>1513 Jeong st. #3-13</address>
+        -->
     </main>
 
-    <footer>&copy; 2021 Y.J</footer>
+    <!-- <footer>&copy; 2021 Y.J</footer> -->
   </body>
 </html>
