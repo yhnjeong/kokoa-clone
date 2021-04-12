@@ -1,68 +1,112 @@
 <!DOCTYPE html>
 <html lang="kr">
-    <head>
-        <title>Home - My first website.</title>
-        <!-- <link href="styles.css" rel="stylesheet" /> -->
-        <style>
-            html {
-                background-color: tomato;
-            }
-            h1 {
-                color: blue;
-                /*
+  <head>
+    <title>Home - My first website.</title>
+    <!-- <link href="styles.css" rel="stylesheet" /> -->
+    <style>
+      * {
+        border: 1px dashed black;
+      }
+      html {
+        background-color: tomato;
+      }
+      h1 {
+        color: blue;
+        /*
                 text-decoration: underline;
                 font-weight: 300;
                 font-style: italic;
                 font-size: 25px;
                 */
-            }
-            body{
-                margin: 20px 5px 12px 99px;
-                /*
+      }
+      body {
+        /* margin: 20px 5px 12px 99px;*/
+        /*
                 margin:20px 15px;
                 */
-                /*
+        /*
                 margin-top:20px;
                 margin-left:10px;
                 margin-right:5px;
                 margin-bottom:10px;
                 */
-                background-color: thistle;
-            }
-            div {
-                /* display:inline; */
-                margin: 80px 15px;
-                background-color: whitesmoke;
-                height:150px;
-                width:150px;               
-            }
-            span {
-                display:block;
-                background-color:turquoise;
-            }
-            address {
-                text-align: center;
-                color: yellowgreen;
-            }
-        </style>
-    </head>
+        margin: 20px;
+        padding: 20px;
+        background-color: thistle;
+      }
+      div {
+        /* display:inline; */
+        /* margin: 80px 15px; */
+        padding: 20px;
+        /* border: 2px solid black; */
+      }
+      #first {
+        background-color: whitesmoke;
+        height: 150px;
+        width: 150px;
+      }
+      #second {
+        background-color: teal;
+        height: 100px;
+        width: 100px;
+      }
+      #third {
+        background-color: wheat;
+        height: 200px;
+        width: 500px;
+      }
+      span {
+        /* display: block; */
+        background-color: teal;
+        /* border-style: dotted; */
+      }
+      /* 
+      #tomato,
+      #tomato2,
+      #tomato3 {
+        background-color: tomato;
+      }
+      */
+      .btn {
+        padding: 5px 10px;
+        border-radius: 5px;
+      }
+      .teal {
+        background-color: teal;
+      }
+      .tomato {
+        background-color: tomato;
+        color: white;
+      }
+      address {
+        text-align: center;
+        color: yellowgreen;
+      }
+    </style>
+  </head>
 
-    <body>
-        <header>
-        <!-- <h1>Yonghyun</h1> -->
-        </header>
+  <body>
+    <header>
+      <!-- <h1>Yonghyun</h1> -->
+    </header>
 
-        <main>
-            <div></div>
-            <span>hello</span>
-            <span>hello</span>
-            <span>hello</span>           
-            <address>1513 Jeong st. #3-13</address>
-        </main>
+    <main>
+      <div id="first">
+        <div id="second">
+          <div id="third">
+            <span class="btn teal">hello</span>
+            <span class="btn tomato">hello</span>
+            <span class="btn teal">hello</span>
+            <span class="btn tomato">hello</span>
+            <span class="btn teal">hello</span>
+            <span class="btn tomato">hello</span>
+            <span class="btn teal">hello</span>
+          </div>
+        </div>
+      </div>
+      <address>1513 Jeong st. #3-13</address>
+    </main>
 
-        <footer>
-            &copy; 2021 Y.J
-
-        </footer>
-    </body>
+    <footer>&copy; 2021 Y.J</footer>
+  </body>
 </html>
