@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <title>The Nico Times</title>
+    <style>
+      a {
+        /*state쪽 말고 이곳에 써야 함*/
+        color: white;
+        background-color: tomato;
+        text-decoration: none;
+        padding: 3px 5px;
+        border-radius: 5px;
+        font-size: 55px;
+        /*transition: background-color 2s ease-in-out, color 1s ease-in-out;*/
+        transition: all 1000ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+      }
+      a:hover {
+        border-radius: 15px;
+        color: tomato;
+        background-color: wheat;
+      }
+    </style>
+  </head>
+
+  <body>
+    <a href="#">Go home</a>
+  </body>
+</html>
