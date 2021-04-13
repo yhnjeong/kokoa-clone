@@ -1,0 +1,109 @@
+/* ㅋㅋ 대박 뿌듯함 */
+@keyframes rotatedot {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  50% {
+    transform: rotateZ(180deg);
+  }
+  100% {
+    transform: rotateZ(180deg);
+  }
+}
+@keyframes rotatebar {
+  0% {
+    transform: scaleY(1);
+  }
+  25% {
+    transform: scaleY(2);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+html {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+body {
+  background-color: rgb(88, 177, 177);
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+div {
+}
+.father {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.childdot {
+  display: flex;
+  justify-content: center;
+  animation: rotatedot 1000ms linear infinite;
+}
+.childbar {
+  display: flex;
+  justify-content: center;
+}
+
+span {
+  background-color: white;
+}
+.dot {
+  width: 10px;
+  height: 10px;
+  margin: 15px;
+  border-radius: 50%;
+}
+.bar {
+  width: 10px;
+  height: 40px;
+  margin: 3px;
+}
+.bar:nth-child(1) {
+  animation-name: rotatebar;
+  animation-timing-function: linear;
+  animation-duration: 1000ms;
+  animation-delay: 0ms;
+  animation-iteration-count: infinite;
+}
+.bar:nth-child(2) {
+  animation-name: rotatebar;
+  animation-timing-function: linear;
+  animation-duration: 1000ms;
+  animation-delay: 100ms;
+  animation-iteration-count: infinite;
+}
+.bar:nth-child(3) {
+  animation-name: rotatebar;
+  animation-timing-function: linear;
+  animation-duration: 1000ms;
+  animation-delay: 200ms;
+  animation-iteration-count: infinite;
+}
+.bar:nth-child(4) {
+  animation-name: rotatebar;
+  animation-timing-function: linear;
+  animation-duration: 1000ms;
+  animation-delay: 300ms;
+  animation-iteration-count: infinite;
+}
+.bar:nth-child(5) {
+  animation-name: rotatebar;
+  animation-timing-function: linear;
+  animation-duration: 1000ms;
+  animation-delay: 400ms;
+  animation-iteration-count: infinite;
+}
