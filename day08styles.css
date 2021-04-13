@@ -1,19 +1,22 @@
 body {
-    background-color:pink;
+    background-color:rgb(255, 232, 236);
     height:100vh;
     text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight:bold;
 }
-
 main {
     display:flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
-div:nth-child(even){
-    border:5px solid yellow;
+div{
+    display:flex;
+    flex-direction: column;
 }
 .father{
+    flex-direction: row;
     width:200px;
     height:350px;
     border:5px solid white;
@@ -36,9 +39,20 @@ div:nth-child(even){
 .inside{
     background-color:white;
     width:200px;
-    height:100px;
+    height:120px;
+
+    display:flex;
+    flex-direction: column;
+    justify-content:space-evenly;
     
     position:relative;
-    top:10px;
-    text-align:left    
+    top: 20px;
+    text-align:left
+}
+span{
+    display: block;
+    font-size: 20pt;
+}
+span:nth-child(2){
+    font-size: 14pt;
 }
