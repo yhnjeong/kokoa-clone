@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@700&family=Montserrat&display=swap");
+body {
+  width: 260px;
+  height: 500px;
+  border: 5px solid rgb(0, 233, 163);
+  padding: 10px;
+  font-family: "Merriweather Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: 15pt;
+}
+
+.status-bar {
+  display: flex;
+  justify-content: center;
+}
+.status-bar__column {
+  width: 33%;
+}
+.status-bar__column:first-child span {
+  padding: 0px 10px;
+}
+
+.nowplaying-bar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.nowplaying-bar__column:first-child {
+  background-color: orange;
+  width: 90px;
+  height: 90px;
+  border: 3px solid black;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nowplaying-bar__column:last-child {
+  width: 130px;
+  height: 90px;
+  /* border: 3px solid black; */
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.nowplaying-bar__songname {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18pt;
+}
+.nowplaying-bar__author {
+  font-family: "Montserrat", sans-serif;
+  font-size: 10pt;
+}
+
+.button-bar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.button-bar__play {
+  width: 120px;
+  height: 40px;
+  border-radius: 15px;
+  border: 3px solid black;
+  box-shadow: 0px 3px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#playbutton-rightspace {
+  margin-right: 10px;
+}
+.button-bar__others {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 3px solid black;
+  box-shadow: 0px 3px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
