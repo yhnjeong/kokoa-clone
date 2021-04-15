@@ -1,0 +1,25 @@
+.status-bar {
+  background-color: #fae100;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0px 80px 0px;
+  box-sizing: border-box;
+}
+.status-bar__column {
+  width: 33%;
+  margin: 0px 15px;
+}
+.status-bar__column:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  font-size:30px;
+  font-weight: bold;
+}
+.status-bar__column:last-child {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
