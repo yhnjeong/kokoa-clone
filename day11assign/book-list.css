@@ -8,9 +8,15 @@
     width:120px;
     height:160px;
     border:2px solid black;
-    background-color:teal;
+    
     border-radius: 10px;
     margin:5px 20px;
+}
+#bgcolor-teal{
+    background-color:teal;
+}
+#bgcolor-tomato{
+    background-color:tomato;
 }
 
 .book-list__data{
