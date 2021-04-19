@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
 @import "reset.css";
 @import "variables.css";
-@import "status-bar.css";
 
 /* Components */
 @import "components/status-bar.css";
@@ -10,10 +9,14 @@
 @import "components/user-component.css";
 
 /* Screens */
-@import "component/status-bar.css" @import "screens/login.css";
+@import "screens/login.css";
 @import "screens/friends.css";
 
 body {
   color: #2e363e;
   font-family: "Open Sans", sans-serif;
+}
+
+.main-screen {
+  padding: 0px var(--horizontal-space);
 }
